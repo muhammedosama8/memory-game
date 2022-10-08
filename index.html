@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./style/css.css" rel="stylesheet" />
+        <title>Game</title>
+    </head>
+    <body id="body">
+        <div class="btn-dark">
+            <button id="dark-mode"><img src="./images/dark-mode.webp" alt="dark-mode" /> </button>
+        </div>
+        <div class="modal">
+            <span>Start Game</span>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="name">
+                    <p>Name: <span id="name"></span></p>
+                </div>
+                <div class="reset">
+                    <span id="reset">Reset</span>
+                </div>
+                <div class="tries">
+                    <p>Wrong Tries: <span id="tries" class="triesNum">0</span></p>
+                </div>
+            </div>
+
+            <div class="game-block">
+                <div class="card" data-technology="bird">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/bird.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="bird">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/bird.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="cat">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/cat.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="cat">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/cat.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="deer">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/deer.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="deer">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/deer.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="dog">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/dog.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="dog">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/dog.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="elephant">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/elephant.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="elephant">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/elephant.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="flamingo">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/flamingo.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="flamingo">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/flamingo.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="fox">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/fox.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="fox">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/fox.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="lion">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/lion.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="lion">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/lion.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="monkey">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/monkey.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="monkey">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/monkey.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="rabbit">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/rabbit.png" alt="animal" />
+                    </div>
+                </div>
+                <div class="card" data-technology="rabbit">
+                    <div class="face front"></div>
+                    <div class="face back">
+                        <img src="./images/rabbit.png" alt="animal" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup none">
+            <div class="msg">
+                <p>Fantastic, You Finished the Game</p>
+                <p id="numOfTries" class="triesNum"></p>
+                <span class="play-again">Play Again</span>
+            </div>
+        </div>
+
+        <script src="./script/js.js"></script>
+    </body>
+</html>
