@@ -1,18 +1,29 @@
+const animals = ['bird', 'cat', 'deer', 'dog', 'elephant', 'flamingo', 'fox', 'lion', 'monkey', 'rabbit']
+const div = document.getElementById('game-block')
+
+animals.map((res)=> {
+    for(let i=0; i<2; i++){
+        let card = document.createElement('div')
+        let front = document.createElement('div')
+        let back = document.createElement('div')
+        let img = document.createElement('img')
+        card.setAttribute('class', 'card')
+        card.setAttribute('data-technology', `${res}`)
+        front.setAttribute('class', 'face front')
+        back.setAttribute('class', 'face back')
+        img.setAttribute('src', `./images/${res}.png`)
+        img.setAttribute('alt', `${res}`)
+
+        back.append(img)
+        card.append(front,back)
+        div.append(card)
+    }
+})
+
 document.getElementById('dark-mode').addEventListener('click', () => {
     document.getElementById('body').classList.toggle('dark-mode')
 })
-const startGame = document.querySelector(".modal span")
-startGame.addEventListener('click', () => {
-    const yourName= prompt('Enter Your Name = ');
-    
-    if(yourName == null || yourName== ''){
-        document.getElementById('name').textContent = 'Unknown'
-    } else{
-        document.getElementById('name').textContent = yourName
-    }
 
-    document.querySelector(".modal").remove()
-})
 var tries = 0
 const duration = 1000
 let blocksContainer = document.querySelector('.game-block')
@@ -107,9 +118,6 @@ const playAgain = ()=> {
     tries = 0
     document.getElementById('tries').innerHTML = tries
 }
-
-document.querySelector('.play-again').addEventListener('click', playAgain )
-document.getElementById('reset').addEventListener('click', playAgain)
 
 if(blocks.forEach(block => block.className.charAt('card'))){
     console.log('True');
